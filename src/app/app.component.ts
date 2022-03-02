@@ -8,17 +8,21 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
   providers: [NgbCarouselConfig], // add NgbCarouselConfig to the component providers
 })
 export class AppComponent {
-  name = 'NetNeutralityBrewing ' + VERSION.major;
+  name = 'Net Neutrality Brewing ' + VERSION.major;
 
   images = [700, 800, 807].map(
-    (n) =>
-      'https://raw.githubusercontent.com/jakeneggs03/angular-ivy-onzwlf/master/IMG_20191112_185319_750.jpg' || 'https://raw.githubusercontent.com/jakeneggs03/angular-ivy-onzwlf/master/Cold%20War%20Dark%20Web%20CE%20label.jpg'
+    (n) => 'https://raw.githubusercontent.com/jakeneggs03/angular-ivy-onzwlf/master/IMG_20191112_185319_750.jpg'
   
   );
-  images1 = [700, 800, 807].map(
+  top = [700, 800, 807].map(
     (n) =>
       `https://raw.githubusercontent.com/jakeneggs03/angular-ivy-onzwlf/master/src/BREWMASTE_2.png`);
 
+      images1 = [700, 800, 807].map(
+        (n) =>'https://raw.githubusercontent.com/jakeneggs03/angular-ivy-ajtsnk/master/src/app/IMG_20200103_173451_917.jpg');
+        images2 = [700, 800, 807].map(
+          (n) =>
+        'https://raw.githubusercontent.com/jakeneggs03/angular-ivy-ajtsnk/master/src/app/20200111_181441.jpg');
   constructor(config: NgbCarouselConfig) {
     // customize default values of carousels used by this component tree
     config.interval = 2000;
